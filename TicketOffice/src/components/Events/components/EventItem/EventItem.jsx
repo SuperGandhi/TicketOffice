@@ -1,8 +1,12 @@
-import React from 'react'
 
-const EventItem = () => {
+
+const EventItem = ({ info, name, image }) => {
   return (
-    <div>EventItem</div>
+    <div>
+        <img src={image} alt={name}/>
+        <h4>{name}</h4>
+        <p>{info}</p>    
+    </div>
   )
 }
 
