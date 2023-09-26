@@ -3,16 +3,6 @@ import { useState } from 'react';
 import EventItem from './components/EventItem/EventItem';
 import eventsJson from '../../data/events.json';
 
-//console.log(data);
-
-//const events = data._embedded;
-
-// object destructuring
-// const { _embedded: { events }} = eventsJson;
-
-
-
-// console.log(events);
 
 
 const Event = () => {
@@ -30,7 +20,7 @@ const Event = () => {
             info = {eventItem.info}
             image = {eventItem.images[0].url}
         />
-    ))}  
+        ))}  
     </div>
   )
 }
