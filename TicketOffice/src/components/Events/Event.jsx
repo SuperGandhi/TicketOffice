@@ -22,7 +22,7 @@ const Event = () => {
 
   return (
     <div>
-        Events...
+        Events
         {events.map((eventItem) => (
         <EventItem
             key={`event-item-${eventItem.id}`}
